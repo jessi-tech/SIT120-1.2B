@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript String Methods</title>
+</head>
+<body>
+   
+    <h1>JavaScript String Methods</h1>
+    
+<script>
+    // String methods
+    const str = 'Hello, Stranger!';
+    console.log(str.length);             // String length: 
+    console.log(str.toUpperCase());      // Convert to uppercase:
+    console.log(str.toLowerCase());      // Convert to lowercase:
+    console.log(str.indexOf('Stranger'));   // Index of substring 
+    console.log(str.slice(7, 12));       // Extract substring
+
+    // Number methods
+    const num = 98.321;
+    console.log(num.toFixed(2));        // Format to fixed number of decimals: 
+    console.log(num.toString());        // Convert to string: 
+    console.log(Number.isNaN(num));     // Check for NaN: false
+    console.log(Math.round(num));       // Round to nearest integer: 
+    console.log(Math.sqrt(num));        // Square root: 
+
+    // Array methods
+    const arr = ['Lavendar', 'Cinnamon', 'cherry', 87, 3];
+    console.log(arr.length);            // Array length
+    console.log(arr.join(', '));        // Convert array to string with separator:
+    console.log(arr.indexOf('Cinnamon')); // Index of element
+    console.log(arr.slice(1, 3));       // Extract sub-array
+    console.log(arr.reverse());         // Reverse array
+
+    // Date methods
+    const now = new Date();
+    console.log(now.toDateString());    // Convert to readable date string
+    console.log(now.getFullYear());     // Get year
+    console.log(now.getMonth());        // Get month (0-11)
+    console.log(now.getDate());         // Get day 
+    console.log(now.getHours());        // Get hours
+
+    // Function methods
+    function greet(name) {
+        console.log(`Hello, ${name}!`);
+    }
+    console.log(greet.name);            // Function name: 'greet'
+    console.log(greet.length);          // Number of parameters: 1
+
+</script>
+
+</body>
+</html>

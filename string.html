@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Methods</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            background-color: rgb(72, 0, 255);
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+</style>
+</head>
+<body>
+    <header>
+        <h1>JavaScript Methods</h1>
+    </header>
+    <div class="container">
+     
+    <div id="stringMethods">
+        <h2>String Methods</h2>
+        <p id="indexOf">Index of 'Stranger':</p>
+        <p id="slice">Substring 'Stranger':</p> 
+        <p id="stringLength">String Length:</p>
+        <p id="toUpperCase">Uppercase:</p>
+        <p id="toLowerCase">Lowercase:</p>
+        </div>
+
+    <div id="numberMethods">
+        <h2>Number Methods</h2>
+        <p id="toFixed">Format to fixed number of decimals:</p>
+        <p id="toString">Convert to string:</p>
+        <p id="isNaN">Check for NaN:</p>
+        <p id="round">Round to nearest integer:</p>
+        <p id="sqrt">Square root:</p>
+    </div>
+
+    <div id="arrayMethods">
+        <h2>Array Methods</h2>
+        <p id="arrayLength">Array length:</p>
+        <p id="join">Convert array to string with separator:</p>
+        <p id="indexOfArray">Index of 'Cinnamon' in array:</p>
+        <p id="sliceArray">Extract sub-array:</p>
+        <p id="reverse">Reverse array:</p>
+    </div>
+
+    <div id="dateMethods">
+        <h2>Date Methods</h2>
+        <p id="toDateString">Convert to readable date string:</p>
+        <p id="getFullYear">Get year:</p>
+        <p id="getMonth">Get month (0-11):</p>
+        <p id="getDate">Get day of the month:</p>
+        <p id="getHours">Get hours:</p>
+    </div>
+
+    <div id="functionMethods">
+        <h2>Function Methods</h2>
+        <p id="functionName">Function name:</p>
+        <p id="functionLength">Number of parameters:</p>
+    </div>
+</div>
+    <script>
+        // String methods
+        const str = 'Hello, Stranger!';
+        document.getElementById('stringLength').textContent += ' ' + str.length;
+        document.getElementById('toUpperCase').textContent += ' ' + str.toUpperCase();
+        document.getElementById('toLowerCase').textContent += ' ' + str.toLowerCase();
+        document.getElementById('indexOf').textContent += ' ' + str.indexOf('Stranger');
+        document.getElementById('slice').textContent += ' ' + str.slice(7, 15);
+
+        // Number methods
+        const num = 98.321;
+        document.getElementById('toFixed').textContent += ' ' + num.toFixed(2);
+        document.getElementById('toString').textContent += ' ' + num.toString();
+        document.getElementById('isNaN').textContent += ' ' + Number.isNaN(num);
+        document.getElementById('round').textContent += ' ' + Math.round(num);
+        document.getElementById('sqrt').textContent += ' ' + Math.sqrt(num);
+
+        // Array methods
+        const arr = ['Lavendar', 'Cinnamon', 'cherry', 87, 3];
+        document.getElementById('arrayLength').textContent += ' ' + arr.length;
+        document.getElementById('join').textContent += ' ' + arr.join(', ');
+        document.getElementById('indexOfArray').textContent += ' ' + arr.indexOf('Cinnamon');
+        document.getElementById('sliceArray').textContent += ' [' + arr.slice(1, 3) + ']';
+        document.getElementById('reverse').textContent += ' [' + arr.reverse() + ']';
+
+
+        // Date methods
+        const now = new Date();
+        document.getElementById('toDateString').textContent += ' ' + now.toDateString();
+        document.getElementById('getFullYear').textContent += ' ' + now.getFullYear();
+        document.getElementById('getMonth').textContent += ' ' + now.getMonth();
+        document.getElementById('getDate').textContent += ' ' + now.getDate();
+        document.getElementById('getHours').textContent += ' ' + now.getHours();
+
+        // Function methods
+        function greet(name) {
+            console.log(`Hello, ${name}!`);
+        }
+        document.getElementById('functionName').textContent += ` ${greet.name}`;
+        document.getElementById('functionLength').textContent += ` ${greet.length}`;
+    </script>
+</body>
+</html>

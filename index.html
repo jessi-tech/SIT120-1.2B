@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Webpage sample</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: rgb(212, 0, 255);
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .content {
+            background-color: #f2f2f2;
+            padding: 20px;
+        }
+
+        @media (max-width: 768px) {
+            header {
+                font-size: 24px;
+                padding: 10px;
+            }
+
+            .container {
+                grid-template-columns: 1fr;
+                /* Single column layout for smaller screens */
+                padding: 10px;
+            }
+
+            .content {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <a href="string.html">Go JS to Page</a>
+    <a href="cl.html">Console log</a>
+    <header>
+        <h1>Responsive Web Design Example with CSS Grid</h1>
+    </header>
+    <div class="container">
+        <div class="sidebar">
+            <h2>Example</h2>
+            <p>To implement responsive web design using html and css and provide an optimal visual user-experience to users across multiple devices a step by step system like this one may be a good guideline. .</p>
+        </div>
+        <div class="content">
+            <h2>Steps</h2>
+            <p>To implement responsive web design using html and css and provide an optimal visual user-experience to users across multiple devices a step by step system like this one may be a good guideline.
+
+                Responsive design principles
+                Knowing about and how to use core principles of responsive web design including media queries, fluid grids and flexible layouts to dynamically adjust web content.
+
+                Set the viewport
+                To optimise pages for a variety of devices setting a meta viewport tag is important. To ensure proper scaling, in the <head> section of the html page include the meta tag “<meta name="viewport" content=width=device-width, initial-scale=1>. The value width=device-width will ensure the page matches the devices width and independent pixels.
+
+                Use a flexible grid
+                There are a number of layout methods that can be used including Flexbox, Grid layout and Multicol. For this example instead of using the Grid layout technique were a container widths and column widths are defined with percentages, the fr unit which represents a portion of space in a contain can be used.
+                i.e
+                .container {
+                  display: grid;
+                  grid-template-columns: 1fr 2fr;
+                }
+
+                Use flexible images
+                Setting the max-width to 100% within a container will ensure images scale proportionally and prevent overflow.
+
+
+                Apply Media Queries and Features
+                Use media queries to apply specific CSS rules that are based on screen sizing and capabilities. For example targeted media features any-hover and any-pointer to optimise the website for touch-based devices like phones and iPads and precise pointer such as computers with mouses or touchpads.
+                @media (any-hover: hover)</p>
+        </div>
+    </div>
+</body>
+
+</html>
